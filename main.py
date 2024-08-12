@@ -3,6 +3,7 @@ from vocales import verificar_vocales
 from diferenciaListas import elementos_unicos
 from promedio import calcular_promedio
 from mediana import calcular_mediana
+from vocales2 import *
 
 def main():
     lista1 = [1, 2, 3, 4, 5]
@@ -11,6 +12,7 @@ def main():
     w = [4, 5, 6]
     y = ("Hola")
     yury = ("no")
+    cadena = "Este es un ejemplo de cadena con varias palabras, Jungkook es el amor de mi vida jajaja"
 
     # calcular_promedio
     promedio = calcular_promedio(v)
@@ -34,6 +36,11 @@ def main():
     #elementos repetidos
 
     verificar_repetidos([1, 2, 3, 4, 5])
+
+    # Ejemplo de uso vocales2
+
+    resultado = encontrar_palabras_con_vocales(cadena)
+    print("Palabras con dos o más vocales:", resultado)
 
 
 
